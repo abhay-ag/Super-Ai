@@ -4,7 +4,7 @@ import { AiOutlinePlus } from "react-icons/ai";
 
 function Navbar() {
   return (
-    <div className="w-screen py-8 px-4 flex flex-col space-y-3 items-start">
+    <div className="py-8 px-4 flex flex-col space-y-3 items-start">
       <font className="border rounded px-2 py-1">
         Employee Movement Breakdown
       </font>

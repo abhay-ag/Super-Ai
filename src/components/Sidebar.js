@@ -2,7 +2,7 @@ import React from "react";
 
 function Sidebar() {
   return (
-    <div className="w-80 shadow-xl shadow-[rgba(0,0,0,0.3)] h-screen absolute right-0 top-0 flex flex-col bg-gray-100">
+    <div className="w-80 shadow-xl shadow-[rgba(0,0,0,0.3)] h-screen flex flex-col bg-gray-100">
       <div className="px-1 flex flex-col space-y-4 py-4">
         <font className="font-bold mx-3 text-lg">Net Change</font>
         <div className="bg-white">
