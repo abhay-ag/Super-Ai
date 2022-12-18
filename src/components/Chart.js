@@ -5,11 +5,15 @@ const option = {
   tooltip: {
     renderMode: "html",
     padding: 0,
-    formatter: `<div style = "color: rgb(74,222,128); padding-left: 10px; padding-top: 10px; font-size: 0.9rem;">{a0}</div>
-    <font style = "padding-left: 10px">2019</font> 
-      <div style = "width: 100%; background-color: white;">
-        {b0}: {c0} 
-      </div>`,
+    formatter: `<div class = "flex flex-col p-3 border">
+      <font class = "text-green-400 text-base"> {a0} </font>
+      <font class = "text-sm">2019</font>
+    </div>
+      <div class ="w-full flex flex-row justify-between px-3 py-1 bg-white">
+        <font>{b0}</font>
+        <font class = "text-green-400">{c0}</font>
+      </div>
+    `,
     extraCssText: "width: 200px",
     appendToBody: true,
   },
@@ -73,12 +77,10 @@ const option = {
       tooltip: {
         borderColor: "rgb(200,200,200)",
         backgroundColor: "rgb(240,240,240)",
-        borderWidth: 1,
-        borderRadius: 3,
+        borderWidth: 0.5,
         textStyle: {
           fontWeight: "bold",
           fontSize: 14,
-          color: "rgb(0,0,0)",
         },
       },
       data: [
