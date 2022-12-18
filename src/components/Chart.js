@@ -18,8 +18,8 @@ const option = {
     appendToBody: true,
   },
   grid: {
-    left: "3%",
-    right: "4%",
+    left: "0%",
+    right: "0%",
     bottom: "3%",
     containLabel: true,
   },
@@ -165,14 +165,30 @@ const option = {
 
 function Chart() {
   return (
-    <div className="h-3/4">
-      <ReactEcharts
-        option={option}
-        style={{
-          height: "100%",
-          width: "100%",
-        }}
-      />
+    <div className="h-3/4 flex flex-row px-4">
+      <div className="flex flex-col justify-end pb-4 items-center">
+        <font className="font-bold text-sm">4.85k</font>
+        <font className="font-thin text-xs text-center">
+          {" "}
+          Starting Headcount{" "}
+        </font>
+      </div>
+      <div className="flex-1 flex flex-col">
+        <ReactEcharts
+          option={option}
+          style={{
+            height: "100%",
+            width: "100%",
+          }}
+        />
+      </div>
+      <div className="flex flex-col justify-end pb-72 items-center">
+        <font className="font-bold text-sm">5.23k</font>
+        <font className="font-thin text-xs text-center">
+          {" "}
+          Ending Headcount{" "}
+        </font>
+      </div>
     </div>
   );
 }
