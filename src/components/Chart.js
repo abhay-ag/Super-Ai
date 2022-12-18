@@ -3,15 +3,15 @@ import ReactEcharts from "echarts-for-react";
 
 const option = {
   tooltip: {
-    trigger: "axis",
-    axisPointer: {
-      type: "shadow",
-    },
-    // extraCssText: "width: 800px",
-    // formatter: function (params) {
-    //   var tar = params[1];
-    //   return tar.name + "<br/>" + tar.seriesName + " : " + tar.value;
-    // },
+    renderMode: "html",
+    padding: 0,
+    formatter: `<div style = "color: rgb(74,222,128); padding-left: 10px; padding-top: 10px; font-size: 0.9rem;">{a0}</div>
+    <font style = "padding-left: 10px">2019</font> 
+      <div style = "width: 100%; background-color: white;">
+        {b0}: {c0} 
+      </div>`,
+    extraCssText: "width: 200px",
+    appendToBody: true,
   },
   grid: {
     left: "3%",
@@ -46,6 +46,9 @@ const option = {
       type: "bar",
       stack: "Total",
       barWidth: "95%",
+      tooltip: {
+        show: false,
+      },
       itemStyle: {
         borderColor: "transparent",
         color: "transparent",
@@ -59,7 +62,7 @@ const option = {
       data: [0, 379, 587, 355, 355, 0],
     },
     {
-      name: "In",
+      name: "Starts",
       type: "bar",
       stack: "Total",
       label: {
@@ -67,11 +70,16 @@ const option = {
         position: "top",
         fontSize: 15,
       },
-      markLine: {
-        data: [{
-          type: "min"
-        }],
-        silent: false
+      tooltip: {
+        borderColor: "rgb(200,200,200)",
+        backgroundColor: "rgb(240,240,240)",
+        borderWidth: 1,
+        borderRadius: 3,
+        textStyle: {
+          fontWeight: "bold",
+          fontSize: 14,
+          color: "rgb(0,0,0)",
+        },
       },
       data: [
         {
