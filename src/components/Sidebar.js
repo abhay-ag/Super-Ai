@@ -45,11 +45,11 @@ function Sidebar() {
           </div>
           <div className="border px-3 text-sm font-semibold py-2 space-x-4 flex flex-row items-center">
             <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-            <font className = "text-gray-400">Occupancies</font>
+            <font className = "text-gray-400">Discrepancies</font>
           </div>
           <div className="border px-3 text-sm font-semibold py-2 space-x-4 flex flex-row items-center">
-            <div className="w-2 h-2 rounded-full bg-teal-400"></div>
-            <font className = "text-teal-400">Exchange</font>
+            <div className="w-2 h-2 rounded-full bg-blue-300"></div>
+            <font className = "text-blue-300">Net Change</font>
           </div>
           </div>
       </div>
