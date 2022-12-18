@@ -166,14 +166,14 @@ const option = {
 function Chart() {
   return (
     <div className="h-3/4 flex flex-row px-4">
-      <div className="flex flex-col justify-end pb-4 items-center">
+      <div className="flex flex-col justify-end pb-8 items-center">
         <font className="font-bold text-sm">4.85k</font>
         <font className="font-thin text-xs text-center">
           {" "}
           Starting Headcount{" "}
         </font>
       </div>
-      <div className="flex-1 flex flex-col">
+      <div className="w-full flex flex-col">
         <ReactEcharts
           option={option}
           style={{
@@ -181,8 +181,18 @@ function Chart() {
             width: "100%",
           }}
         />
+        <div className="flex flex-row space-x-1 px-8">
+          <div className="flex flex-col items-center w-[34%]">
+            <div className="w-full h-1 bg-gray-500"></div>
+            <font className = "text-sm text-neutral-400 uppercase">Incoming</font>
+          </div>
+          <div className="flex flex-col items-center w-[34%]">
+            <div className="w-full h-1 bg-gray-500"></div>
+            <font className = "text-sm text-neutral-400 uppercase">outgoing</font>
+          </div>
+        </div>
       </div>
-      <div className="flex flex-col justify-end pb-72 items-center">
+      <div className="flex flex-col justify-end pb-[19rem] items-center">
         <font className="font-bold text-sm">5.23k</font>
         <font className="font-thin text-xs text-center">
           {" "}
